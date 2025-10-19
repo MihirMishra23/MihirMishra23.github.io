@@ -17,6 +17,7 @@ body {
     color: var(--text);
     margin: 0;
     line-height: 1.6;
+    font-size: 1.1rem;
 }
 
 .container {
@@ -91,6 +92,39 @@ body {
     font-size: 1.1rem;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    background: var(--sidebar-bg);
+    margin-bottom: 1.5rem;
+}
+
+.social-icons .icon-link {
+    padding: 0;
+    background: transparent;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.social-icons .icon-link:hover {
+    background: transparent;
+    transform: translateY(-2px);
+}
+
+.social-icons .icon-link:hover .icon {
+    color: var(--accent);
+}
+
+.contact-links .icon,
+.social-icons .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+}
+
 .content {
     margin-left: var(--sidebar-width);
     flex: 1;
@@ -111,7 +145,7 @@ section h2 {
 }
 
 section#about p {
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     line-height: 1.7;
 }
 
@@ -159,9 +193,9 @@ ul {
 
 footer {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     background: var(--card-bg);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #666;
     border-top: 1px solid #e0e0e0;
 }
