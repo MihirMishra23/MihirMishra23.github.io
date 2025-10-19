@@ -1,16 +1,106 @@
-<!-- index.html -->
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>My Site</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Mihir Mishra - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <h1>hello, world 👋</h1>
-    <p>Deployed with GitHub Pages.</p>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="photo.jpg" alt="Profile Photo" class="profile-photo" />
+            <h1>Mihir Mishra</h1>
+            <p class="tagline">Software Engineer • ML Researcher</p>
+            <nav class="contact-links">
+                <a href="https://www.linkedin.com/in/mihir-mishra-cs" target="_blank">
+                    <span>🔗</span> LinkedIn
+                </a>
+                <a href="mailto:mrm367@cornell.edu">
+                    <span>✉️</span> mrm367@cornell.edu
+                </a>
+                <a href="https://github.com/MihirMishra23" target="_blank">
+                    <span>💻</span> GitHub
+                </a>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section id="about">
+                <h2>👋 About Me</h2>
+                <p>
+                    I'm a Master's student at Cornell University studying Computer Science, graduating in May 2026.
+                    My interests are in Machine Learning, Computer Vision, Large Language Models, and AI
+                    agents. I conduct research in <a href="https://www.cs.cornell.edu/~kilian/" target="_blank">Kilian
+                        Weinberger's group</a>.
+                </p>
+                <p>
+                    I completed two internships at Amazon on a research science team, where I trained computer vision
+                    models and developed algorithms for improving package processing efficiency. My code is currently
+                    in production in 16 package processing centers, with plans to scale across North America.
+                </p>
+            </section>
+
+            <section id="interests">
+                <h2>💡 Interests</h2>
+                <ul>
+                    <li>LLM Agents</li>
+                    <li>Computer Vision</li>
+                    <li>Memory Augmented Models</li>
+                    <li>LLM Optimizations</li>
+                </ul>
+            </section>
+
+            <section id="publications">
+                <h2>📚 Publications</h2>
+                <ul>
+                    <li>
+                        <strong>Pi-CoT (formerly known as Memento)</strong><br />
+                        Under review at ICLR — 2026 <br />
+                        <a href="https://arxiv.org/pdf/2506.20642" target="_blank">PDF</a> | <a
+                            href="https://arxiv.org/abs/2506.20642" target="_blank">arXiv</a>
+                    </li>
+                    <li>
+                        <strong>Cascaded Debiasing: Studying the Cumulative Effect of Multiple Fairness-Enhancing
+                            Interventions</strong><br />
+                        ACM CIKM — 2022<br />
+                        <a href="https://arxiv.org/pdf/2202.03734" target="_blank">PDF</a> | <a
+                            href="https://arxiv.org/abs/2202.03734" target="_blank">arXiv</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="projects">
+                <h2>💼 Projects</h2>
+                <div class="card">
+                    <h3>GraphMind: Neuro-symbolic Graph Memory for Large Language Models</h3>
+                    <p>Researching novel approaches to memory-augmented LLMs for reasoning and planning, with 3 key
+                        improvements over current systems: (1)
+                        reinforcement learning for graph memory updates, (2) property-graph databases for memory
+                        storage,
+                        and (3) graph neural networks for memory retrieval.</p>
+                    <p>
+                        <a href="https://github.com/MihirMishra23/GraphMind" target="_blank">GitHub ↗</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>SmartCRM - A Gen-AI powered Customer Relationship Management System</h3>
+                    <p>Designed 2 LLM chain architectures with Google Search integration to autogenerate personalized
+                        email replies and follow-ups to people in my network based on past communication and recent news
+                        about their company. SmartCRM uses a PostgreSQL backend with a React frontend.</p>
+                    <p>
+                        <a href="https://github.com/MihirMishra23/SmartCRM" target="_blank">GitHub ↗</a>
+                    </p>
+                </div>
+            </section>
+
+            <footer>
+                <p>© 2025 Mihir Mishra — All Rights Reserved.</p>
+            </footer>
+        </main>
+    </div>
 </body>
 
 </html>
